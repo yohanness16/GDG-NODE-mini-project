@@ -9,6 +9,6 @@ router.post("/create", createNewCart);
 router.post("/:cartId/add", validateRequest(cartAddItemSchema), addItemToSpecificCart);
 router.get("/", getCart);
 router.put("/:cartId/item/:productId", validateRequest(cartUpdateSchema), updateQuantity);
-router.delete("/:cartId/item/:productId", validateRequest(cartAddItemSchema), removeFromCart);
+router.delete("/:cartId/item/:productId", removeFromCart);
 
 export default router;

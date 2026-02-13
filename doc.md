@@ -82,7 +82,7 @@ Allows users to manage a temporary shopping basket before placing an order.
 
 **Description:** Creates a new cart session and adds the initial product.
 
-**URL:** `http://localhost:5000/cart/`
+**URL:** `http://localhost:5000/cart/create`
 
 **Method:** `POST`
 

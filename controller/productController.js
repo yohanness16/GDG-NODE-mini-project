@@ -7,6 +7,9 @@ export const createProduct = async (req, res, next) => {
     try {
         const newProduct = await products.create(req.body);
         logger.info("Product created successfully");
+        if (req.headers['content-type'] === 'application/x-www-form-urlencoded') {
+            return res.redirect('/pages/products');
+        }
         res.status(201).json({ 
             success: true,
              data: newProduct }
