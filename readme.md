@@ -12,7 +12,7 @@
 ## Prerequisites
 Before you begin, ensure you have the following installed:
 * Node.js (v16 or higher)
-* MongoDB Atlas account or local MongoDB
+* MongoDB Atlas account 
 
 ## Installation
 
